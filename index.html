@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal ETL - Premium</title>
+
+<!-- Ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+    /* ================= BASE ================= */
+    :root {
+        --primary: #0ea5a4;
+        --bg: #f2f5fa;
+        --card-bg: #ffffffcc;
+        --radius: 18px;
+        --shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    body {
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        background: var(--bg);
+        color: #2d3436;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    /* ================= HEADER ================= */
+    header {
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(10px);
+        background: rgba(255,255,255,0.65);
+        padding: 22px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--primary);
+        border-bottom: 1px solid #e3e9ee;
+        z-index: 50;
+    }
+
+    header .sub {
+        font-size: 14px;
+        margin-top: 4px;
+        color: #687076;
+        font-weight: 400;
+    }
+
+    /* ================= GRID ================= */
+    .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 28px;
+    }
+
+    /* ================= CARD ================= */
+    .card {
+        background: var(--card-bg);
+        backdrop-filter: blur(6px);
+        padding: 30px 25px;
+        border-radius: var(--radius);
+        text-decoration: none;
+        color: inherit;
+        border: 1px solid rgba(255,255,255,0.4);
+        box-shadow: var(--shadow);
+        transition: 0.22s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    }
+
+    .card i {
+        font-size: 46px;
+        margin-bottom: 16px;
+        color: var(--primary);
+    }
+
+    .card h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+        font-weight: 700;
+    }
+
+    .card p {
+        font-size: 14px;
+        color: #55606e;
+        line-height: 1.4;
+    }
+
+    /* ================= MOBILE STYLE ================= */
+    @media (max-width: 500px) {
+        header {
+            font-size: 20px;
+            padding: 18px;
+        }
+
+        .container {
+            padding: 15px;
+            gap: 18px;
+        }
+
+        .card {
+            padding: 25px 22px;
+        }
+
+        .card i {
+            font-size: 38px;
+        }
+
+        .card h2 {
+            font-size: 18px;
+        }
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
+        color: #636e72;
+        font-size: 13px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    Portal Premium ETL
+    <div class="sub">Acesso rápido aos seus sistemas</div>
+</header>
+
+<div class="container">
+
+    <a href="https://etlgr.netlify.app/login.html" class="card" target="_blank">
+        <i class="fa-solid fa-file-lines"></i>
+        <h2>Gerador de Relatórios</h2>
+        <p>Crie e exporte relatórios com rapidez e precisão.</p>
+    </a>
+
+    <a href="https://paineletl.netlify.app/" class="card" target="_blank">
+        <i class="fa-solid fa-table-list"></i>
+        <h2>Painel de Mesas</h2>
+        <p>Visualize reservas e mesas em tempo real.</p>
+    </a>
+
+    <a href="https://etlreserva.netlify.app/" class="card" target="_blank">
+        <i class="fa-solid fa-calendar-check"></i>
+        <h2>Reserva de Mesas</h2>
+        <p>Clientes podem reservar mesas de forma simples.</p>
+    </a>
+
+    <a href="https://horasetl.netlify.app/" class="card" target="_blank">
+        <i class="fa-solid fa-clock"></i>
+        <h2>Registro de Horas</h2>
+        <p>Controle de horas trabalhadas com relatórios.</p>
+    </a>
+
+</div>
+
+<footer>Desenvolvido por Nay Cordeiro</footer>
+
+</body>
+</html>
